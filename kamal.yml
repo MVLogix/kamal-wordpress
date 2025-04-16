@@ -1,0 +1,15 @@
+server:
+  host: 3.111.50.202
+  user: ubuntu
+  ssh_key: /home/user/ec2-key.pem
+
+app:
+  name: wordpress
+  deploy_to: /var/www/wordpress
+  docker_compose: true
+
+docker:
+  context: .
+  dockerfile: Dockerfile
+
+
